@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact Us</title>
-</head>
-<body>
-  <h1>Contact Us</h1>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">Learn more about us</a></li>
-  </ul>
-</body>
-</html>
+@extends('layout')
+
+@section('content')
+    <h1>Contact</h1>
+    <form>
+        <div><label for="name">Name</label>
+        <input type="text" placeholder="name" id="name"></div>
+        <div><label for="email">Email Address</label>
+        <input type="text" placeholder="email" id="email"></div>
+        <div><textarea name="email-content" id="email-content" cols="30" rows="10"></textarea></div>
+        <button type="submit">Submit</button>
+    </form>
+@endsection
