@@ -18,9 +18,7 @@ Route::get('/', function () {
     'Be willing to die on a treadmil',
     'Help Tesa be whatever she wants to be'
   ];
-    return view('welcome', [
-      'tasks' => $tasks
-    ]);
+    return view('welcome')->withTasks($tasks)->withFoo('Codeful');
 });
 
 Route::get('/contact', function () {
