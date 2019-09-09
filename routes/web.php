@@ -12,7 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  $tasks = [
+    'Go to the store',
+    'Finish all your work',
+    'Be willing to die on a treadmil',
+    'Help Tesa be whatever she wants to be'
+  ];
+    return view('welcome', [
+      'tasks' => $tasks
+    ]);
 });
 
 Route::get('/contact', function () {
