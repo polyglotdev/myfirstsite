@@ -16,4 +16,14 @@ class PagesController extends Controller
   ];
     return view('welcome')->withTasks($tasks)->withFoo('CodefulDom');
   }
+
+  public function about()
+  {
+    return view('about');
+  }
+
+  public function contact()
+  {
+    return view('contact');
+  }
 }
